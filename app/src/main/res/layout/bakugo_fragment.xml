@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.BakugoFragment">
+
+
+    <LinearLayout
+        android:background="#808080"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Bakugo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/character_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character_name"
+        android:src="@drawable/bakugo_imagebutton"/>
+
+    <TextView
+        android:id="@+id/character_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Name:      Katsuki Bakugo\n Age:       15\n Power:     Explosion \n Katsuki is a crude, arrogant, short-tempered, and aggressive person, especially at the beginning of the series. Katsuki tends to come off as an anti-hero, if not downright villainous for those not familiar with him. This problematic behavior goes all the way back to his early childhood days when he was known to bully a young, Quirkless Izuku Midoriya. However, after being accepted into U.A. High School and experiencing several personal defeats, one of them even coming from Izuku, Katsuki has gradually changed into a less antagonistic person, albeit still retaining a lot of his unpleasant traits. Determined and thirsty for victory, Katsuki smiles eerily when in the middle of a battle. He is incredibly focused on achieving his own authentic victories and has learned to never underestimate his opponents. Katsuki is not only very talented at fighting, but also very intelligent and extremely perceptive, capable of strategic planning and holding some of the highest grades in his class, to the point that some even consider him a natural genius.
+        \n\n\n"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character_pic"
+        />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.TodorokiFragment">
+
+    <LinearLayout
+        android:background="#808080"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Todoroki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/character_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character_name"
+        android:src="@drawable/todoroki_imagebutton"/>
+
+    <TextView
+        android:id="@+id/character_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Name:     Shouto Todoroki\n
+        Age:      15\n
+        Power:     Half-Hot Half-Cold\n
+        Shoto had a deep loathing for his fire abilities, which he inherited from Endeavor, as it symbolized his father's wickedness towards him and his mother as well as what he was born to be: a tool to surpass All Might, a fate that he detests. As such, Shoto decided to rely solely on his ice power and never use the other half of his Quirk in battles, going so far as to cover his left torso and arm with ice in his first Hero Costume to symbolize his rebellion against his father. His flames would be used only to undo his freezing moves. During his match with Izuku in the U.A. Sports Festival, Izuku's speech made the memory of his mother's supportive words resurface, and for the first time since his childhood, Shoto used his fire power in combat. After the battle, Shoto had mixed feelings about using his left side, but after reconciling with his mother, Shoto eventually came to terms with the half he once hated. Despite being scarred by her when he was a young child, Shoto showcases no hard feelings towards his mother, visiting her often ever since the end of the Sports Festival. \n\n\n"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character_pic"
+        />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

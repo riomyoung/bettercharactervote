@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/bakugo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bakugo"
+        app:layout_constraintLeft_toLeftOf="@id/bakugo_imagebutt"
+        app:layout_constraintRight_toRightOf="@id/bakugo_imagebutt"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/bakugo_imagebutt"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bakugo_imagebutton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/todoroki_imagebutt"
+
+        app:layout_constraintTop_toBottomOf="@+id/bakugo_name" />
+
+    <Button
+        android:id="@+id/vote_bakugo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote Bakugo"
+        app:layout_constraintLeft_toLeftOf="@id/bakugo_imagebutt"
+        app:layout_constraintRight_toRightOf="@id/bakugo_imagebutt"
+        app:layout_constraintTop_toBottomOf="@+id/bakugo_imagebutt"
+        android:layout_below="@id/baku_fragment"
+        />
+
+    <TextView
+        android:id="@+id/score_bakugo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bakugo: 0"
+        app:layout_constraintLeft_toLeftOf="@id/vote_bakugo"
+        app:layout_constraintRight_toRightOf="@id/vote_bakugo"
+        app:layout_constraintTop_toBottomOf="@+id/vote_bakugo"
+        />
+
+    <TextView
+        android:id="@+id/todoroki_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Todoroki"
+        app:layout_constraintLeft_toLeftOf="@id/todoroki_imagebutt"
+        app:layout_constraintRight_toRightOf="@id/todoroki_imagebutt"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/todoroki_imagebutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/todoroki_imagebutton"
+        app:layout_constraintTop_toBottomOf="@+id/todoroki_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bakugo_imagebutt"
+
+        />
+
+    <Button
+        android:id="@+id/vote_todoroki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote Todoroki"
+        app:layout_constraintLeft_toLeftOf="@id/todoroki_imagebutt"
+        app:layout_constraintRight_toRightOf="@id/todoroki_imagebutt"
+        app:layout_constraintTop_toBottomOf="@+id/todoroki_imagebutt"
+        android:layout_below="@id/baku_fragment"
+        />
+    <TextView
+        android:id="@+id/score_todoroki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Todoroki: 0"
+        app:layout_constraintLeft_toLeftOf="@id/vote_todoroki"
+        app:layout_constraintRight_toRightOf="@id/vote_todoroki"
+        app:layout_constraintTop_toBottomOf="@+id/vote_todoroki"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Hint: Click on pictures for more info!"
+        />
+    <Button
+        android:id="@+id/close_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/todo_fragment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="CLOSE INFO"
+        />
+
+
+    <fragment
+        android:id="@+id/todo_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.bettercharactervote.ui.main.TodorokiFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <fragment
+        android:id="@+id/baku_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.bettercharactervote.ui.main.BakugoFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
